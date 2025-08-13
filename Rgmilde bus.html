@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rgmilde Bus </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Rgmilde Bus Clone</div>
+        <nav class="navbar">
+            <a href="#">Bus Tickets</a>
+            <a href="#">Cab Rental</a>
+            <a href="#">Train Tickets</a>
+            <a href="#">Help</a>
+            <a href="#" class="login-btn">Login/Signup</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h1>India's No. 1 Online Bus Ticket Booking Site</h1>
+            <div class="search-form-container">
+                <form id="bus-search-form">
+                    <div class="form-group">
+                        <label for="from">FROM</label>
+                        <input type="text" id="from" placeholder="Enter boarding point" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">TO</label>
+                        <input type="text" id="to" placeholder="Enter destination point" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">DATE</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <button type="submit" class="search-btn">SEARCH BUSES</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results-section" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h2>Search Results</h2>
+                <span id="results-summary"></span>
+            </div>
+            <div class="results-list" id="results-list">
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Rgmilde Bus Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
